@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    background-image: url(img.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.game-container {
+    background: rgb(231, 206, 206);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.players-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.players-info div {
+    flex: 1;
+    text-align: center;
+}
+
+.players-info label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.players-info input {
+    padding: 8px;
+    width: 70%;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+.players-info input:focus {
+    border-color: black;
+}
+
+.players-info span {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #f1f1f1;
+    border: 2px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #b2a1a1;
+}
+
+.cell.X {
+    color: #3f51b5;
+}
+
+.cell.O {
+    color: red;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: gray;
+}
