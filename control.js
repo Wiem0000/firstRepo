@@ -76,19 +76,10 @@ $(document).ready(function() {
         });
     }
 
-    // Reset the board
+    ////// Reset the board
     function resetBoard() {
         arraycell = ["", "", "", "", "", "", "", "", ""];
         $(".cell").text("").removeClass("X O");
         currentPlayer = "X"
     }
-
-    // Restart game
-    $("#reset").click(function() {
-        resetBoard();
-        score1 = 0;
-        score2 = 0;
-        $("#score1").text(score1);
-        $("#score2").text(score2);
-    });
 })
